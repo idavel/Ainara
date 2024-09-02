@@ -1,0 +1,248 @@
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+header {
+    
+    background-color: transparent;
+    text-align: center;
+    margin: 60px auto 0; /* Espacio superior igual a la altura de la barra de navegación */
+    font-style: italic;
+    padding: 20px;
+    color: rgba(219, 50, 171, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(225, 250, 4, 0.669);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Tamaño de fuente más grande para el título */
+    color: #ee00ff56; /* Color de texto mejorado */
+    text-shadow: 0 2px 5px rgba(221, 11, 240, 0.6); /* Sombra más intensa para el texto */
+}
+header p {
+    margin: 0;
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño para el subtítulo */
+    color: #ee00ff56(239, 10, 243, 0.8); /* Color de texto claro con 80% de opacidad */
+    text-shadow: 0 2px 5px rgba(221, 11, 240, 0.6); /* Sombra más intensa para el subtítulo */
+}
+
+
+header img {
+    float: left; /* Hace que la imagen flote a la izquierda */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    max-width: 100px; /* Mantiene la imagen dentro de un tamaño manejable */
+    height: auto;
+    border-radius: 50px; /* Opción para bordes redondeados */
+    box-shadow: 0 3px 5px rgba(247, 9, 219, 0.975); /* Sombra sutil */
+}
+#información{
+    margin-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    background-image: url(imagenes/botones/bzzx.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de transparencia */
+    background-blend-mode: overlay; /* Mezcla la imagen de fondo con el color de fondo */
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+button{
+    color: #ccff00c7;
+    background-color: rgba(255, 0, 242, 0.418);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Barra de navegación */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(247, 219, 10, 0.6);
+    height: 50px; /* Altura ligeramente aumentada para una mejor usabilidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+    font-size: 16px; /* Tamaño de fuente base aumentado */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado aumentado entre elementos de la barra de navegación */
+}
+
+nav ul li a {
+    color: #8a0596;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px; /* Reducción en el padding para un aspecto más limpio */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #eb60b6;
+    color: #fff; /* Mejor contraste en el hover */
+}
+
+/* Secciones */
+section {
+    padding-top: 80px; /* Espacio superior para la barra de navegación */
+    margin: 20px auto; /* Espaciado uniforme en las secciones */
+    width: 80%; /* Ancho limitado para una mejor legibilidad */
+}
+
+section:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.93);
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    border: 2px solid gold; /* Se añade borde sólido */
+    transition: background-color 0.5s ease;
+}
+
+section:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    transition: background-color 0.5s ease; /* Transición suavizada */
+}
+
+main {
+    margin-top: 20px; /* Espacio superior */
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Galería */
+#galeria {
+    padding: 2px;
+    width: 60%;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #e8e4062f;
+    border-radius: 10px; /* Bordes redondeados para la galería */
+    box-shadow: 0 4px 8px rgba(238, 254, 0, 0.372); /* Sombra sutil para elevar la galería */
+    
+}
+
+.galeria-contenido {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+    
+}
+/* Botones de navegación */
+.galeria-prev, .galeria-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(211, 196, 196, 0.8); /* Mayor contraste en los botones */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%; /* Botones circulares */
+    transition: background-color 0.3s ease;
+}
+
+.galeria-prev {
+    left: 10px;
+}
+
+.galeria-next {
+    right: 10px;
+}
+
+.galeria-prev:hover, .galeria-next:hover {
+    background-color: rgba(219, 50, 171, 0.9);
+}
+.galeria-contenido img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Bordes redondeados en las imágenes */
+}
+
+
+#ubicacion{
+    margin-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    font-style: italic;
+    color: #e602ea;
+    background-image: url(imagenes/botones/bzzx.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de transparencia */
+    background-blend-mode: overlay; /* Mezcla la imagen de fondo con el color de fondo */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+    
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul li a {
+        font-size: 14px; /* Ajuste de fuente en pantallas medianas */
+    }
+
+    header img {
+        max-width: 80px; /* Tamaño de imagen reducido para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 12px; /* Ajuste de fuente en pantallas pequeñas */
+    }
+
+    header img {
+        max-width: 60px;
+    }
+}
